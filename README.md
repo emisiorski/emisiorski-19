@@ -1,7 +1,5 @@
 # Budget Tracker
 
-# Note Taker Starter Code
-
 # Description:
 This is a PWA application that allows you to track your budget.
 
@@ -14,7 +12,7 @@ This is a PWA application that allows you to track your budget.
 
 ### Link:
 
-[Link to github](https://emisiorski.github.io/SQL-Emisiorski/)
+[Link to github](https://github.com/emisiorski/emisiorski-19)
 
 
 
