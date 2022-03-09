@@ -18,7 +18,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.use(express.static("public"));
-// test
+
 
 mongoose.connect(MONGODB_URI, {
   useNewUrlParser: true,
