@@ -13,6 +13,8 @@ const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost/budget';
 
 app.use(logger("dev"));
 
+
+// fixing
 app.use(compression());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -30,7 +32,7 @@ mongoose.connect(MONGODB_URI, {
 
 app.use(require("./routes/api"));
 
-
+// testing
 app.listen(PORT, () => {
   console.log(`App running on port ${PORT}!`);
 });
