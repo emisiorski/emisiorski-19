@@ -9,13 +9,9 @@ const PORT = process.env.PORT || 3001;
 
 const app = express();
 
-// const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/budget';
-
 
 app.use(logger("dev"));
 
-
-// fixing
 app.use(compression());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -32,7 +28,6 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/budget', 
 
 app.use(require("./routes/api"));
 
-// testing
 app.listen(PORT, () => {
   console.log(`App running on port ${PORT}!`);
 });
