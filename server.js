@@ -14,7 +14,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.use(express.static("public"));
-// help
+// test
 
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/budget', {
   useNewUrlParser: true,
