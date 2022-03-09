@@ -6,9 +6,10 @@ const compression = require("compression");
 
 const PORT = process.env.PORT || 3001;
 
-const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost/budget',
-
 const app = express();
+
+const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost/budget';
+
 
 app.use(logger("dev"));
 
